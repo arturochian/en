@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="Description" content="A website of Lijia Yu, including Chinese and English blogs." />
+	<meta name="Keywords" content="genomics, bioinformatics, mathematics, statistics, perl, R language, data visualization, data analysis, LaTeX, Lijia Yu" />
+	<title>Lijia Yu's Website</title> 
+	<link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+	<link rel="stylesheet" href="/assets/css/highlight.css" type="text/css" />
+	<link rel="shortcut icon" href=" http://lijiayu.net/favicon.ico" /> 
+	<link rel="alternate" type="application/rss+xml" title="On Your Mark &raquo; Feed" href="http://yulijia.net/cn/feed/" />
+	<link rel="alternate" type="application/rss+xml" title="On Your Mark &raquo; 评论 Feed" href="http://yulijia.net/cn/comments/feed/" />
+
+
+<!-- MathJax Section -->
+
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<script>
+    MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+        }
+    });
+    MathJax.Hub.Config({
+          tex2jax: {
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+          }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+
+</head>
+<body>
+<div id="wrapper">
+    <div id="header">
+<h1 class="blog-title">
+<a href="{{ site.url }}/en/" name="top">{{ site.title }}</a><br />
+</h1>
+<h1 class="blog-description"><span>{{ site.tagline }}</span></h1>
+
+<ul id="menu-navigation" class="menu">
+  <li><a href="{{ site.url }}/" title="Homepage">Home</a></li>
+  <li><a href="{{ site.url }}/guestbook/" title="Guestbook">Guestbook</a></li>
+  <li><a href="{{ site.url }}/categories/" title="Categories">Categories</a></li>
+  <li><a href="{{ site.url }}/tags/" title="Tags">Tags</a></li>
+  <li><a href="{{ site.url }}/feed/" title="subscribe by RSS">Subscribe</a></li>
+</ul>
+    </div>
+<div id="content">{{ content }}
+ <!--   <div class="left">
+    {% if paginator.previous_page %}
+      {% if paginator.previous_page == 1 %}
+      <a href="/" title="Previous Page">&laquo; Previous</a>
+      {% else %}
+      <a href="/page{{ paginator.previous_page }}/" title="Previous Page">&laquo; Previous</a>
+      {% endif %}
+    {% endif %}
+    </div>
+    <div class="right">
+    {% if paginator.next_page %}
+    <a href="/page{{ paginator.next_page }}/" title="Next Page">Next &raquo;</a>
+    {% endif %}
+    </div>
+-->     
+    <div class="pagination">
+     <div class="left">
+      <ul>
+     {% if paginator.previous_page %}
+      {% if paginator.previous_page == 1 %}
+         <li><a href="/" title="Previous Page">&larr; Previous</a></li>     
+      {% else %}
+         <li><a href="/page{{ paginator.previous_page }}/" title="Previous Page">&larr; Previous</a></li>
+      {% endif %}
+     {% endif %}
+     </div>
+     <div class="right">
+      {% if paginator.next_page %}
+        <li><a href="/page{{ paginator.next_page }}/" title="Next Page">Next &rarr;</a></li>
+      {% endif %}
+      </ul>
+     </div>
+    </div>
+  </div> 
+ 
+
+<ul id="sidebar">
+<div class="widget">
+<li class="widget">
+<h2>Copyright Notice</h2>			
+<div><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
+<img src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png">
+</a>
+<br>
+<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Attribution-NonCommercial-ShareAlike</a>
+</div>
+		</li>
+		
+		        <li class="widget">
+         <h2 >Recent Posts</h2>
+              <ul>
+                {% for post in site.posts limit:10 %}
+                <li>
+                  <a href="{{ post.url }}" title="{{ post.title }}" rel="bookmark">{{ post.title }}</a>
+                </li>
+                {% endfor %}
+              </ul>
+        </li>
+		
+		<li class="widget ">
+
+    <h2>Categories</h2>
+        <ul>
+             {% for cat in site.categories %}
+            <li><a href="{{ site.url }}/categories/#{{ cat[0] }}" title="{{ cat[0] }}" rel="{{ cat[1].size }}">{{ cat[0] }} ({{ cat[1].size }})</a></li>
+             {% endfor %}
+        </ul>
+        </li> 
+        
+		<li class="widget ">
+
+    <h2>Tags</h2>
+        <ul>
+        {% for tag in site.tags %}
+       
+            <a href="{{ site.url }}/tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a> &nbsp;
+            
+        {% endfor %}
+        </ul>
+        </li> 
+         
+</div>
+</ul>
+	<div id="footer">
+	    <div class="alignleft">
+	    	<p>
+				Copyright &copy; <a href="{{ site.url }}/en/">{{site.title}}</a>
+			</p>
+	    </div>
+		<div class="alignright">
+			<p>
+				Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> on GitHub | 
+				Design by <a href="{{ site.url }}">{{site.author}}</a>
+			</p>
+		</div>
+	</div>
+	<div style="clear:both"></div>
+</div>
+</body>
+</html>

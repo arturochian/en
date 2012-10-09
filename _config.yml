@@ -1,0 +1,8 @@
+paginate: 5
+markdown: kramdown
+#rdiscount
+pygments: true
+title : Biology and Mathematics
+tagline: Stay Hungry, Stay Foolish
+author: Lijia YU
+url: http://yulijia.github.com/en

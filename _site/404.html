@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="Description" content="A website of Lijia Yu, including Chinese and English blogs." />
+	<meta name="Keywords" content="genomics, bioinformatics, mathematics, statistics, perl, R language, data visualization, data analysis, LaTeX, Lijia Yu" />
+</head>
+	<title>Lijia Yu's Website</title> 
+	<link rel="stylesheet" href="/css/homepage.css" type="text/css" />
+	<link rel="shortcut icon" href=" http://lijiayu.net/favicon.ico" /> 
+</head>
+<body>
+
+<h1 id="logo"><a href="http://lijiayu.net/">Lijia Yu's Website</a></h1>
+
+<ul class="nav pills">
+  <li><a href="/" title="Homepage">Home</a></li>
+  <li><a href="/cn/" title="My Chinese blog">Chinese</a></li>
+  <li><a href="/en/" title="My English blog">English</a></li>
+  <li><a href="/lab/" title="Some of my work">Lab</a></li>
+  <li><a href="/slide/" title="Presentation slide">Slide</a></li>
+  <li><a href="/design/" title="Digital design">Design</a></li>
+</ul>
+
+<p><img src="/images/Find_the_answer.gif" title="Find the answer!" alt="Find the answer!" /></p>
+
+<h1>Here are some ways</h1>
+
+<p><strong><a href="http://www.r-project.org/">R language</a>: </strong></p>
+
+<pre><code>    integrate(function(x){8*x+2/5},0,10)
+</code></pre>
+
+<p><strong><a href="http://www.mathworks.com/products/matlab/">MATLAB language</a>: </strong></p>
+
+<pre><code>    vpa(int((8*x+2/5),0,10))
+</code></pre>
+
+<p><strong>C programming with the <a href="http://www.gnu.org/software/gsl/">GSL</a>: </strong></p>
+
+<pre><code>    #include &lt;stdio.h&gt;
+    #include &lt;math.h&gt;
+    #include &lt;gsl/gsl_integration.h&gt;
+    double f(double x,void * params){
+        double f = 8*x+2./5;
+        return f;
+    }
+    int main (void){
+        gsl_integration_workspace * g = gsl_integration_workspace_alloc (1000);
+        double result, error;
+        gsl_function F;
+        F.function = &amp;f;
+        gsl_integration_qags (&amp;F,0,10,0,1e-7,1000,g,&amp;result,&amp;error);
+        printf("result= %.18f\n",result);
+        gsl_integration_workspace_free (g);
+        return 0;
+    }
+</code></pre>
+
+<hr />
+
+<pre><code>    # g++ -Wall -I/usr/lib/include -c fun.c
+    # g++ fun.o -lgsl -lgslcblas -lm -o main.out
+    # ./main.out
+</code></pre>
+
+<h3>Page not found >> Please return to the <a href="/">homepage</a> or <a href="mailto:yu@lijiayu.net">let me know</a> about the missing link:)</h3>
+
+
+<p align="center"><small>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> on GitHub | Copyright 2011 - 2012 by <a href="http://yulijia.net" title="yulijia.net">yulijia.net</a> &amp; <a href="http://lijiayu.net" title="lijiayu.net">lijiayu.net</a> |Updated @2012-09-21 19:50:46</small></p>
+</body>
+</html>

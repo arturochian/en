@@ -263,7 +263,7 @@ caption{
 }
 
 /* LINKS */
-div.entry a:link {color: #DD1144}
+div.entry a:link a:visited{color: #DD1144}
 a{
 	color: #333;
 	text-decoration: none;

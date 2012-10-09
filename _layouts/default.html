@@ -109,7 +109,7 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
               <ul>
                 {% for post in site.posts limit:10 %}
                 <li>
-                  <a href="{{ post.url }}" title="{{ post.title }}" rel="bookmark">{{ post.title }}</a>
+                  <a href="en/{{ post.url }}" title="{{ post.title }}" rel="bookmark">{{ post.title }}</a>
                 </li>
                 {% endfor %}
               </ul>

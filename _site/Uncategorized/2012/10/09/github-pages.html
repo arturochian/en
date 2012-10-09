@@ -55,9 +55,84 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
   <li><a href="http://yulijia.github.com/en/feed/" title="subscribe by RSS">Subscribe</a></li>
 </ul>
     </div>
-<div id="content"><h1><center>WHOOPS! <br/>Page NOT FOUND.</center></h1> <br/><br/>The page you are looking for is not here! <br /> It may have been either moved or deleted or, most likely, it never existed!!
-<br />
-<h4><a href="http://yulijia.github.com/en/" title="Homepage">Head back blog's main page!</a></h4>
+<div id="content"><h2 class="title">Create Github pages</h2>
+<div class="postmeta">
+    <span class="comments"><a href='#disqus_thread'>Comments</a></span>
+    <span>Posted by Lijia YU </span>
+    <span>in 
+    
+    <a href="http://yulijia.github.com/en/en/categories/#Uncategorized" title="Uncategorized">Uncategorized</a>&nbsp;
+    
+    </span>
+    <span> 
+    on 09 Oct 2012
+    </span>
+    <br /> 
+    
+    <span>
+    Tagged with:
+    
+    <a href="http://yulijia.github.com/en/en/tags/#Github" title="Github">Github</a>&nbsp;
+    
+    <a href="http://yulijia.github.com/en/en/tags/#Git" title="Git">Git</a>&nbsp;
+    
+    </span>
+    
+</div>
+<div class="entry">
+  <p>I think creating github pages are not difficult, however when I realized that gp-pages are not a single branch it may belongs to a master branch. Problems are revealing. </p>
+
+<p>I didn&#8217;t know how to create a  Project Pages on a new folder.
+The following manual you may found on <a href="http://help.github.com/articles/creating-project-pages-manually" title="creating project pages manually">github.com</a>.
+It said that, you may want to remove all files from the old working tree. But when you use the command, all file on your disk folder will be deleted <code>;(</code>.</p>
+
+<div class="highlight"><pre><code class="ruby"><span class="n">git</span> <span class="n">rm</span> <span class="o">-</span><span class="n">rf</span> <span class="o">.</span> <span class="c1"># Remove all files from the old working tree</span>
+</code></pre>
+</div>
+
+<p>So please pay attention to the command if you have many files which didn&#8217;t want to be deleted.</p>
+
+<h4 id="how-to-create-a-gh-pages-without-a-master-branch">How to create a gh-pages without a master branch?</h4>
+<p><a href="http://oli.jp/2011/github-pages-workflow/" title="github pages workflow">This page</a> will help you.
+Remember, using </p>
+
+<div class="highlight"><pre><code class="ruby"> <span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="ss">:master</span>
+</code></pre>
+</div>
+
+<p>git push origin &#8211;delete gh-pages</p>
+
+  <hr />
+</div>
+
+   <div class="pagination">
+      <ul>
+      
+        <li><a href="/en/Uncategorized/2012/10/08/a-new-site.html" title="A new site">&larr; Previous</a></li>
+      
+      
+        <li class="disabled"><a>Next &rarr;</a>
+      
+      </ul>
+    </div>
+
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'biologyandmathematics'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
 
 
 

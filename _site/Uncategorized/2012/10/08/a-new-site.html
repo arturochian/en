@@ -55,9 +55,86 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
   <li><a href="http://yulijia.github.com/en/feed/" title="subscribe by RSS">Subscribe</a></li>
 </ul>
     </div>
-<div id="content"><h1><center>WHOOPS! <br/>Page NOT FOUND.</center></h1> <br/><br/>The page you are looking for is not here! <br /> It may have been either moved or deleted or, most likely, it never existed!!
-<br />
-<h4><a href="http://yulijia.github.com/en/" title="Homepage">Head back blog's main page!</a></h4>
+<div id="content"><h2 class="title">A new site</h2>
+<div class="postmeta">
+    <span class="comments"><a href='#disqus_thread'>Comments</a></span>
+    <span>Posted by Lijia YU </span>
+    <span>in 
+    
+    <a href="http://yulijia.github.com/en/en/categories/#Uncategorized" title="Uncategorized">Uncategorized</a>&nbsp;
+    
+    </span>
+    <span> 
+    on 08 Oct 2012
+    </span>
+    <br /> 
+    
+    <span>
+    Tagged with:
+    
+    <a href="http://yulijia.github.com/en/en/tags/#Github" title="Github">Github</a>&nbsp;
+    
+    <a href="http://yulijia.github.com/en/en/tags/#Git" title="Git">Git</a>&nbsp;
+    
+    </span>
+    
+</div>
+<div class="entry">
+  <p>Today, I started the new blog on Github. All pages transferred from html to markdown.</p>
+
+<p>This is a new  start of my blog.</p>
+
+<p>I use some css from the other&#8217;s blog.
+The most helpful jekyll blog are <a href="http://yihui.name" title="yihui XIE's homepage">yihui.name</a>, <a href="http://pingmygeek.com/" title="PingMyGeek's homepage">pingmygeek.com</a>, <a href="http://huangzhimin.com/" title="Richard Huang's Website">huangzhimin.com</a> and <a href="http://freemind.pluskid.org/" title="Free Mind's blog">freemind.pluskid.org</a>.</p>
+
+<p>I use a label and a &lt;q&gt; tag from <a href="http://freemind.pluskid.org/" title="Free Mind's blog">freemind.pluskid.org</a>,</p>
+
+<div class="label-anchor">
+<a class="label-anchor" name=""><span>Euler's identity »</span></a>
+</div>
+
+<script type="math/tex; mode=display">e^{i\pi}+1=0</script>
+
+<p>Because some pages will write using <script type="math/tex">\LaTeX</script> (I don&#8217;t know why the five letters are too close one to another ), I change the Markdown processor from <q>rdiscount</q> to <q>kramdown</q>.</p>
+
+<p>When using Mathjax, I should avoid highlight.css mixing between Mathjax and Pygments</p>
+
+<div class="highlight"><pre><code class="bash">pygmentize -S friendly -f html | sed <span class="s1">&#39;s/^/.highlight code /g&#39;</span> &gt; assets/css/highlight.css
+</code></pre>
+</div>
+
+
+  <hr />
+</div>
+
+   <div class="pagination">
+      <ul>
+      
+        <li><a href="/en/Bioinformatics/2012/03/22/100-things-bioinformatics-students-should-do-before-graduating.html" title="100 things bioinformatics students should do before graduating.">&larr; Previous</a></li>
+      
+      
+        <li><a href="/en/Uncategorized/2012/10/09/github-pages.html" title="Create Github pages">Next &rarr;</a></li>
+      
+      </ul>
+    </div>
+
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'biologyandmathematics'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
 
 
 

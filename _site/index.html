@@ -4,41 +4,444 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="Description" content="A website of Lijia Yu, including Chinese and English blogs." />
 	<meta name="Keywords" content="genomics, bioinformatics, mathematics, statistics, perl, R language, data visualization, data analysis, LaTeX, Lijia Yu" />
-</head>
 	<title>Lijia Yu's Website</title> 
-	<link rel="stylesheet" href="/css/homepage.css" type="text/css" />
+	<link rel="stylesheet" href="http://yulijia.github.com/en/assets/css/style.css" type="text/css" />
+	<link rel="stylesheet" href="http://yulijia.github.com/en/assets/css/highlight.css" type="text/css" />
 	<link rel="shortcut icon" href=" http://lijiayu.net/favicon.ico" /> 
+	<link rel="alternate" type="application/rss+xml" title="On Your Mark &raquo; Feed" href="http://yulijia.net/cn/feed/" />
+	<link rel="alternate" type="application/rss+xml" title="On Your Mark &raquo; 评论 Feed" href="http://yulijia.net/cn/comments/feed/" />
+
+
+<!-- MathJax Section -->
+
+<script type="text/javascript"
+src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<script>
+    MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+      processEscapes: true
+        }
+    });
+    MathJax.Hub.Config({
+          tex2jax: {
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre']
+          }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for(i=0; i < all.length; i += 1) {
+            all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+    });
+</script>
+
+
 </head>
 <body>
+<div id="wrapper">
+    <div id="header">
+<h1 class="blog-title">
+<a href="http://yulijia.github.com/en/en/" name="top">Biology and Mathematics</a><br />
+</h1>
+<h1 class="blog-description"><span>Stay Hungry, Stay Foolish</span></h1>
 
-<h1 id="logo"><a href="http://lijiayu.net/">Lijia Yu's Website</a></h1>
-
-<ul class="nav pills">
-  <li><a href="/" title="Homepage">Home</a></li>
-  <li><a href="/cn/" title="My Chinese blog">Chinese</a></li>
-  <li><a href="/en/" title="My English blog">English</a></li>
-  <li><a href="/lab/" title="Some of my work">Lab</a></li>
-  <li><a href="/slide/" title="Presentation slide">Slide</a></li>
-  <li><a href="/design/" title="Digital design">Design</a></li>
+<ul id="menu-navigation" class="menu">
+  <li><a href="http://yulijia.github.com/en/" title="Homepage">Home</a></li>
+  <li><a href="http://yulijia.github.com/en/guestbook/" title="Guestbook">Guestbook</a></li>
+  <li><a href="http://yulijia.github.com/en/categories/" title="Categories">Categories</a></li>
+  <li><a href="http://yulijia.github.com/en/tags/" title="Tags">Tags</a></li>
+  <li><a href="http://yulijia.github.com/en/feed/" title="subscribe by RSS">Subscribe</a></li>
 </ul>
+    </div>
+<div id="content"><!---limit: listing_limit %}-->
+<h2 class="title"><a href="/en/Uncategorized/2012/10/09/github-pages.html" rel="bookmark">Create Github pages</a></h2>
+<div class="postmeta">
+    <span class="comments"><a href='/en/Uncategorized/2012/10/09/github-pages.html#disqus_thread'>Comments</a></span>
+    <span>Posted by Lijia YU </span>
+    <span>in 
+    
+    <a href="http://yulijia.github.com/en/categories/#Uncategorized">Uncategorized</a>&nbsp;
+    
+    </span>
+    <span> 
+    on 09 Oct 2012
+    </span>
+    <br /> 
+    
+    <span>Tagged with: 
+    
+    <a href="http://yulijia.github.com/en/tags/#Github" title="Github">Github </a>&nbsp;
+    
+    <a href="http://yulijia.github.com/en/tags/#Git" title="Git">Git </a>&nbsp;
+    
+    </span>
+    
+</div>
+<div class="entry"><p>I think creating github pages are not difficult, however when I realized that gp-pages are not a single branch it may belongs to a master branch. Problems are revealing. </p>
 
-<p><strong>Welcome</strong> to the website of Lijia Yu. I'm a postgraduate student majoring in Bioinformatics. This site is mainly about biology, mathematics, data analysis, daily life, etc. By the way, You may find many many Chinglish in this site. :)</p>
+<p>I didn&#8217;t know how to create a  Project Pages on a new folder.
+The following manual you may found on <a href="http://help.github.com/articles/creating-project-pages-manually" title="creating project pages manually">github.com</a>.
+It said that, you may want to remove all files from the old working tree. But when you use the command, all file on your disk folder will be deleted <code>;(</code>.</p>
 
-<p><strong>A poem, I think the way I want to go:</strong></p>
+<div class="highlight"><pre><code class="ruby"><span class="n">git</span> <span class="n">rm</span> <span class="o">-</span><span class="n">rf</span> <span class="o">.</span> <span class="c1"># Remove all files from the old working tree</span>
+</code></pre>
+</div>
 
-<p>Zen Road<br/>
-To follow the path,<br/>
-look to the master,<br/>
-follow the master,<br/>
-walk with the master,<br/>
-see through the master,<br/>
-become the master.</p>
+<p>So please pay attention to the command if you have many files which didn&#8217;t want to be deleted.</p>
 
-<p><strong>Wishlist:</strong> Star Trek</p>
+<h4 id="how-to-create-a-gh-pages-without-a-master-branch">How to create a gh-pages without a master branch?</h4>
+<p><a href="http://oli.jp/2011/github-pages-workflow/" title="github pages workflow">This page</a> will help you.
+Remember, using </p>
 
-<p><strong>Contact Me:</strong> yu AT lijiayu DOT net</p>
+<div class="highlight"><pre><code class="ruby"> <span class="n">git</span> <span class="n">push</span> <span class="n">origin</span> <span class="ss">:master</span>
+</code></pre>
+</div>
+
+<p>git push origin &#8211;delete gh-pages</p>
+
+    <hr />
+</div>
+<!---limit: listing_limit %}-->
+<h2 class="title"><a href="/en/Uncategorized/2012/10/08/a-new-site.html" rel="bookmark">A new site</a></h2>
+<div class="postmeta">
+    <span class="comments"><a href='/en/Uncategorized/2012/10/08/a-new-site.html#disqus_thread'>Comments</a></span>
+    <span>Posted by Lijia YU </span>
+    <span>in 
+    
+    <a href="http://yulijia.github.com/en/categories/#Uncategorized">Uncategorized</a>&nbsp;
+    
+    </span>
+    <span> 
+    on 08 Oct 2012
+    </span>
+    <br /> 
+    
+    <span>Tagged with: 
+    
+    <a href="http://yulijia.github.com/en/tags/#Github" title="Github">Github </a>&nbsp;
+    
+    <a href="http://yulijia.github.com/en/tags/#Git" title="Git">Git </a>&nbsp;
+    
+    </span>
+    
+</div>
+<div class="entry"><p>Today, I started the new blog on Github. All pages transferred from html to markdown.</p>
+
+<p>This is a new  start of my blog.</p>
+
+<p>I use some css from the other&#8217;s blog.
+The most helpful jekyll blog are <a href="http://yihui.name" title="yihui XIE's homepage">yihui.name</a>, <a href="http://pingmygeek.com/" title="PingMyGeek's homepage">pingmygeek.com</a>, <a href="http://huangzhimin.com/" title="Richard Huang's Website">huangzhimin.com</a> and <a href="http://freemind.pluskid.org/" title="Free Mind's blog">freemind.pluskid.org</a>.</p>
+
+<p>I use a label and a &lt;q&gt; tag from <a href="http://freemind.pluskid.org/" title="Free Mind's blog">freemind.pluskid.org</a>,</p>
+
+<div class="label-anchor">
+<a class="label-anchor" name=""><span>Euler's identity »</span></a>
+</div>
+
+<script type="math/tex; mode=display">e^{i\pi}+1=0</script>
+
+<p>Because some pages will write using <script type="math/tex">\LaTeX</script> (I don&#8217;t know why the five letters are too close one to another ), I change the Markdown processor from <q>rdiscount</q> to <q>kramdown</q>.</p>
+
+<p>When using Mathjax, I should avoid highlight.css mixing between Mathjax and Pygments</p>
+
+<div class="highlight"><pre><code class="bash">pygmentize -S friendly -f html | sed <span class="s1">&#39;s/^/.highlight code /g&#39;</span> &gt; assets/css/highlight.css
+</code></pre>
+</div>
 
 
-<p align="center"><small>Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> on GitHub | Copyright 2011 - 2012 by <a href="http://yulijia.net" title="yulijia.net">yulijia.net</a> &amp; <a href="http://lijiayu.net" title="lijiayu.net">lijiayu.net</a> |Updated @2012-09-21 19:50:46</small></p>
+    <hr />
+</div>
+<!---limit: listing_limit %}-->
+<h2 class="title"><a href="/en/Bioinformatics/2012/03/22/100-things-bioinformatics-students-should-do-before-graduating.html" rel="bookmark">100 things bioinformatics students should do before graduating.</a></h2>
+<div class="postmeta">
+    <span class="comments"><a href='/en/Bioinformatics/2012/03/22/100-things-bioinformatics-students-should-do-before-graduating.html#disqus_thread'>Comments</a></span>
+    <span>Posted by Lijia YU </span>
+    <span>in 
+    
+    <a href="http://yulijia.github.com/en/categories/#Bioinformatics">Bioinformatics</a>&nbsp;
+    
+    </span>
+    <span> 
+    on 22 Mar 2012
+    </span>
+    <br /> 
+    
+    <span>Tagged with: 
+    
+    <a href="http://yulijia.github.com/en/tags/#Bioinformatics" title="Bioinformatics">Bioinformatics </a>&nbsp;
+    
+    </span>
+    
+</div>
+<div class="entry"><p>0000 – Install an Linux system on your computer.</p>
+
+<p>0001 – Follow the <a href="http://tagide.com/blog/2011/06/things-ics-students-should-do-before-graduating/" title="10000 things all ICS students should do before graduating">10000 things all ICS students should do before graduating</a></p>
+
+<p>0010 – Learn Cell, Molecular Biology, Genomic, Genetics by yourself.</p>
+
+<p>0011 – Learn Computational mathematics, Applied mathematics and Statistics.</p>
+
+<p>0100 – Try create a bioinformatics tool. Belief in your ability.</p>
+
+    <hr />
+</div>
+<!---limit: listing_limit %}-->
+<h2 class="title"><a href="/en/Bology/Views/2011/10/21/why-viruses-produce-long-dsrna-but-not-endogenous-ones.html" rel="bookmark">Why viruses produce long dsRNA but not endogenous ones?</a></h2>
+<div class="postmeta">
+    <span class="comments"><a href='/en/Bology/Views/2011/10/21/why-viruses-produce-long-dsrna-but-not-endogenous-ones.html#disqus_thread'>Comments</a></span>
+    <span>Posted by Lijia YU </span>
+    <span>in 
+    
+    <a href="http://yulijia.github.com/en/categories/#Bology">Bology</a>&nbsp;
+    
+    <a href="http://yulijia.github.com/en/categories/#Views">Views</a>&nbsp;
+    
+    </span>
+    <span> 
+    on 21 Oct 2011
+    </span>
+    <br /> 
+    
+    <span>Tagged with: 
+    
+    <a href="http://yulijia.github.com/en/tags/#dsRNA" title="dsRNA">dsRNA </a>&nbsp;
+    
+    <a href="http://yulijia.github.com/en/tags/#Virus" title="Virus">Virus </a>&nbsp;
+    
+    </span>
+    
+</div>
+<div class="entry"><p><strong>When I read DRACO paper, my adviser ask me the question (on the title).</strong></p>
+
+<p><span style="color: #669900;">My primitive idea is the following text. (2011.08)</span></p>
+
+<p><span style="color: #669900;">On the beginning, I also send a letter to Dr. Rider, but I didn&#8217;t receive his reply <code>T_T</code> (2011.08.21)</span></p>
+
+<p>This question can be divided into two parts: one is why viruses produce long dsRNAs, the other is why endogenous dsRNAs are short.</p>
+
+<p><strong>In August,</strong>I guess endogenous long dsRNA is unstable in cells.Dicer can cleaves endogenous dsRNAs to produce siRNA. Long endogenous dsRNAs can induce complete Gene silencing in mammalian cells and primary cultures. So endogenous dsRNA are shorter than exogenous dsRNA.</p>
+
+<p><strong>But, there are some questions on my guess.</strong></p>
+
+<p><strong>What RNA belong to dsRNA?</strong></p>
+
+<p>As we know, mircoRNA is not siRNA, though it as little as siRNA. So, what RNA is dsRNA? tRNA and rRNA has some hairpin structure (cloverleaf structure). Does this structure is double strand structure? All RNA viruses must produce at least a transient dsRNA intermediate. In replicating + or - RNA, you have to produce the opposite sense RNA, thus forming a dsRNA molecule. tRNA has only one strand, and the hairpin structure isn’t made of double strands.</p>
+
+<p>I think dsRNA must made of two strands perfectly complementary, the secondary structure isn’t reflect strand type.</p>
+
+<p><span style="color: #669900;">On the molecular biology class, I learn mircoRNA is single strand. (2011.10.14)</span></p>
+
+<p><strong>Why endogenous dsRNAs are short?</strong></p>
+
+<p>In the DRACO paper, it said that uninfected mammalian cells don’t produce long dsRNA. Information generally transfer from DNA to RNA (central dogma). RNA can not replication in human cells.So endogenous dsRNAs are not existence in human cells.</p>
+
+<p>Why viruses produce long dsRNAs but not short ones?</p>
+
+<p>RNA viruses’ genetic information are all in the RNA, so it longer.</p>
+
+<p><span style="color: #669900;">However, I think I have misunderstanding the question. (2011.10.09)</span></p>
+
+<p><strong>Why viruses produce dsRNAs?</strong></p>
+
+<p>Positive-strand RNA, dsRNA, or DNA viruses produce dsRNA.</p>
+
+<p>RNA polymerase synthesizes an RNA strand complementary to the genome. This produces a dsRNA. RNA can not replication in human cells.So endogenous dsRNAs are not existence in human cells.</p>
+
+<p>Negative-strand RNA viruses doesn&#8217;t produce dsRNA. (Double-Stranded RNA Is Produced by Positive-Strand RNA Viruses and DNA Viruses but Not in Detectable Amounts by Negative-Strand RNA Viruses)</p>
+
+    <hr />
+</div>
+<!---limit: listing_limit %}-->
+<h2 class="title"><a href="/en/Bology/Views/2011/08/18/should-draco-be-effective-against-virtually-all-viruses.html" rel="bookmark">Should DRACO be effective against virtually all viruses?</a></h2>
+<div class="postmeta">
+    <span class="comments"><a href='/en/Bology/Views/2011/08/18/should-draco-be-effective-against-virtually-all-viruses.html#disqus_thread'>Comments</a></span>
+    <span>Posted by Lijia YU </span>
+    <span>in 
+    
+    <a href="http://yulijia.github.com/en/categories/#Bology">Bology</a>&nbsp;
+    
+    <a href="http://yulijia.github.com/en/categories/#Views">Views</a>&nbsp;
+    
+    </span>
+    <span> 
+    on 18 Aug 2011
+    </span>
+    <br /> 
+    
+    <span>Tagged with: 
+    
+    <a href="http://yulijia.github.com/en/tags/#DRACO" title="DRACO">DRACO </a>&nbsp;
+    
+    <a href="http://yulijia.github.com/en/tags/#dsRNA" title="dsRNA">dsRNA </a>&nbsp;
+    
+    <a href="http://yulijia.github.com/en/tags/#Virus" title="Virus">Virus </a>&nbsp;
+    
+    </span>
+    
+</div>
+<div class="entry"><p>A big news from MIT: <a href="http://www.ll.mit.edu/news/DRACO.html" title="MIT Lincoln Laboratory researchers develop a technique to cure a broad range of viruses">MIT Lincoln Laboratory researchers develop a technique to cure a broad range of viruses</a></p>
+
+<blockquote>
+  <p>Dr. Todd Rider and his team have developed and demonstrated a novel broad-spectrum antiviral approach, called DRACO (for <span style="text-decoration:underline">D</span>ouble-stranded <span style="text-decoration:underline">R</span>NA <q>dsRNA</q> <span style="text-decoration:underline">A</span>ctivated <span style="text-decoration:underline">C</span>aspase <span style="text-decoration:underline">O</span>ligomerizer). DRACO selectively induces apoptosis, or cell suicide, in cells containing any viral dsRNA, rapidly killing infected cells without harming uninfected cells. As a result, DRACO should be effective against virtually all viruses, rapidly terminating a viral infection while minimizing the impact on the patient.</p>
+</blockquote>
+
+<p>BUT, Should DRACO be effective against virtually all viruses?</p>
+
+<p>I think there are many problem. <strong>First</strong>, DRACO can only senses double-stranded RNA, and DRACO just senses <strong>long</strong> ( &gt;~23nt ) dsRNA, so it just can senses a limit of viruses. <strong>Second</strong>, DRACO is a chimeric protein, how to delivery it into our body without proteolysis? The delivery mechanism may a big problem. <strong>Third</strong>, viruses have some tricks use to inhibit apoptosis. So, DRACOs seems not effective against virually all viruses.</p>
+
+<p>BTW: Is Dr. Todd a fan of Harry Potter ? <code>;)</code></p>
+
+    <hr />
+</div>
+ 
+
+ <!--   <div class="left">
+    
+    </div>
+    <div class="right">
+    
+    <a href="/en/page2/" title="Next Page">Next &raquo;</a>
+    
+    </div>
+-->     
+    <div class="pagination">
+     <div class="left">
+      <ul>
+     
+     </div>
+     <div class="right">
+      
+        <li><a href="/en/page2/" title="Next Page">Next &rarr;</a></li>
+      
+      </ul>
+     </div>
+    </div>
+  </div> 
+<ul id="sidebar">
+<div class="widget">
+<li class="widget">
+<h2>Copyright Notice</h2>			
+<div><a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">
+<img src="http://i.creativecommons.org/l/by-nc-sa/3.0/88x31.png">
+</a>
+<br>
+<a href="http://creativecommons.org/licenses/by-nc-sa/3.0/">Attribution-NonCommercial-ShareAlike</a>
+</div>
+		</li>
+		
+		        <li class="widget">
+         <h2 >Recent Posts</h2>
+              <ul>
+                
+                <li>
+                  <a href="/en/Uncategorized/2012/10/09/github-pages.html" title="Create Github pages" rel="bookmark">Create Github pages</a>
+                </li>
+                
+                <li>
+                  <a href="/en/Uncategorized/2012/10/08/a-new-site.html" title="A new site" rel="bookmark">A new site</a>
+                </li>
+                
+                <li>
+                  <a href="/en/Bioinformatics/2012/03/22/100-things-bioinformatics-students-should-do-before-graduating.html" title="100 things bioinformatics students should do before graduating." rel="bookmark">100 things bioinformatics students should do before graduating.</a>
+                </li>
+                
+                <li>
+                  <a href="/en/Bology/Views/2011/10/21/why-viruses-produce-long-dsrna-but-not-endogenous-ones.html" title="Why viruses produce long dsRNA but not endogenous ones?" rel="bookmark">Why viruses produce long dsRNA but not endogenous ones?</a>
+                </li>
+                
+                <li>
+                  <a href="/en/Bology/Views/2011/08/18/should-draco-be-effective-against-virtually-all-viruses.html" title="Should DRACO be effective against virtually all viruses?" rel="bookmark">Should DRACO be effective against virtually all viruses?</a>
+                </li>
+                
+                <li>
+                  <a href="/en/How to do/R Language/2011/08/06/how-to-calculate-word-frequencies-with-r.html" title="How to calculate word frequencies with R" rel="bookmark">How to calculate word frequencies with R</a>
+                </li>
+                
+                <li>
+                  <a href="/en/Uncategorized/2011/07/22/hello-world.html" title="Hello world!" rel="bookmark">Hello world!</a>
+                </li>
+                
+              </ul>
+        </li>
+		
+		<li class="widget ">
+
+    <h2>Categories</h2>
+        <ul>
+             
+            <li><a href="http://yulijia.github.com/en/en/categories/#Uncategorized" title="Uncategorized" rel="3">Uncategorized (3)</a></li>
+             
+            <li><a href="http://yulijia.github.com/en/en/categories/#Bology" title="Bology" rel="2">Bology (2)</a></li>
+             
+            <li><a href="http://yulijia.github.com/en/en/categories/#Bioinformatics" title="Bioinformatics" rel="1">Bioinformatics (1)</a></li>
+             
+            <li><a href="http://yulijia.github.com/en/en/categories/#R Language" title="R Language" rel="1">R Language (1)</a></li>
+             
+            <li><a href="http://yulijia.github.com/en/en/categories/#Views" title="Views" rel="2">Views (2)</a></li>
+             
+            <li><a href="http://yulijia.github.com/en/en/categories/#How to do" title="How to do" rel="1">How to do (1)</a></li>
+             
+        </ul>
+        </li> 
+        
+		<li class="widget ">
+
+    <h2>Tags</h2>
+        <ul>
+        
+       
+            <a href="http://yulijia.github.com/en/en/tags/#dsRNA" title="dsRNA" rel="2">dsRNA</a> &nbsp;
+            
+        
+       
+            <a href="http://yulijia.github.com/en/en/tags/#DRACO" title="DRACO" rel="1">DRACO</a> &nbsp;
+            
+        
+       
+            <a href="http://yulijia.github.com/en/en/tags/#word frequencies" title="word frequencies" rel="1">word frequencies</a> &nbsp;
+            
+        
+       
+            <a href="http://yulijia.github.com/en/en/tags/#R" title="R" rel="1">R</a> &nbsp;
+            
+        
+       
+            <a href="http://yulijia.github.com/en/en/tags/#Github" title="Github" rel="2">Github</a> &nbsp;
+            
+        
+       
+            <a href="http://yulijia.github.com/en/en/tags/#Bioinformatics" title="Bioinformatics" rel="1">Bioinformatics</a> &nbsp;
+            
+        
+       
+            <a href="http://yulijia.github.com/en/en/tags/#Virus" title="Virus" rel="2">Virus</a> &nbsp;
+            
+        
+       
+            <a href="http://yulijia.github.com/en/en/tags/#Git" title="Git" rel="2">Git</a> &nbsp;
+            
+        
+        </ul>
+        </li> 
+         
+</div>
+</ul>
+	<div id="footer">
+	    <div class="alignleft">
+	    	<p>
+				Copyright &copy; <a href="http://yulijia.github.com/en/en/">Biology and Mathematics</a>
+			</p>
+	    </div>
+		<div class="alignright">
+			<p>
+				Powered by <a href="https://github.com/mojombo/jekyll">Jekyll</a> on GitHub | 
+				Design by <a href="http://yulijia.github.com/en/en/">Lijia YU</a>
+			</p>
+		</div>
+	</div>
+	<div style="clear:both"></div>
+</div>
 </body>
 </html>

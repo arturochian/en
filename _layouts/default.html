@@ -48,11 +48,11 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
 <h1 class="blog-description"><span>{{ site.tagline }}</span></h1>
 
 <ul id="menu-navigation" class="menu">
-  <li><a href="{{ site.url }}/" title="Homepage">Home</a></li>
-  <li><a href="{{ site.url }}/guestbook/" title="Guestbook">Guestbook</a></li>
-  <li><a href="{{ site.url }}/categories/" title="Categories">Categories</a></li>
-  <li><a href="{{ site.url }}/tags/" title="Tags">Tags</a></li>
-  <li><a href="{{ site.url }}/feed/" title="subscribe by RSS">Subscribe</a></li>
+  <li><a href="{{ site.url }}/en/" title="Homepage">Home</a></li>
+  <li><a href="{{ site.url }}/en/guestbook/" title="Guestbook">Guestbook</a></li>
+  <li><a href="{{ site.url }}/en/categories/" title="Categories">Categories</a></li>
+  <li><a href="{{ site.url }}/en/tags/" title="Tags">Tags</a></li>
+  <li><a href="{{ site.url }}//enfeed/" title="subscribe by RSS">Subscribe</a></li>
 </ul>
     </div>
 <div id="content">{{ content }}
@@ -61,13 +61,13 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
       {% if paginator.previous_page == 1 %}
       <a href="/" title="Previous Page">&laquo; Previous</a>
       {% else %}
-      <a href="/page{{ paginator.previous_page }}/" title="Previous Page">&laquo; Previous</a>
+      <a href="/en/page{{ paginator.previous_page }}/" title="Previous Page">&laquo; Previous</a>
       {% endif %}
     {% endif %}
     </div>
     <div class="right">
     {% if paginator.next_page %}
-    <a href="/page{{ paginator.next_page }}/" title="Next Page">Next &raquo;</a>
+    <a href="/en/page{{ paginator.next_page }}/" title="Next Page">Next &raquo;</a>
     {% endif %}
     </div>
 -->     
@@ -76,15 +76,15 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
       <ul>
      {% if paginator.previous_page %}
       {% if paginator.previous_page == 1 %}
-         <li><a href="/" title="Previous Page">&larr; Previous</a></li>     
+         <li><a href="/en/" title="Previous Page">&larr; Previous</a></li>     
       {% else %}
-         <li><a href="/page{{ paginator.previous_page }}/" title="Previous Page">&larr; Previous</a></li>
+         <li><a href="/en/page{{ paginator.previous_page }}/" title="Previous Page">&larr; Previous</a></li>
       {% endif %}
      {% endif %}
      </div>
      <div class="right">
       {% if paginator.next_page %}
-        <li><a href="/page{{ paginator.next_page }}/" title="Next Page">Next &rarr;</a></li>
+        <li><a href="/en/page{{ paginator.next_page }}/" title="Next Page">Next &rarr;</a></li>
       {% endif %}
       </ul>
      </div>
@@ -120,7 +120,7 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
     <h2>Categories</h2>
         <ul>
              {% for cat in site.categories %}
-            <li><a href="{{ site.url }}/categories/#{{ cat[0] }}" title="{{ cat[0] }}" rel="{{ cat[1].size }}">{{ cat[0] }} ({{ cat[1].size }})</a></li>
+            <li><a href="{{ site.url }}/en/categories/#{{ cat[0] }}" title="{{ cat[0] }}" rel="{{ cat[1].size }}">{{ cat[0] }} ({{ cat[1].size }})</a></li>
              {% endfor %}
         </ul>
         </li> 
@@ -131,7 +131,7 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
         <ul>
         {% for tag in site.tags %}
        
-            <a href="{{ site.url }}/tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a> &nbsp;
+            <a href="{{ site.url }}/en/tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a> &nbsp;
             
         {% endfor %}
         </ul>

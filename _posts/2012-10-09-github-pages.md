@@ -3,7 +3,7 @@ published: true
 title: Create Github pages 
 layout: post
 categories:
-- Uncategorized
+- Git
 tags: 
 - Github
 - Git

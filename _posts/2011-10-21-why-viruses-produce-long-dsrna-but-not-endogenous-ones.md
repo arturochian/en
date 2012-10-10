@@ -3,8 +3,7 @@ published: true
 title: Why viruses produce long dsRNA but not endogenous ones?
 layout: post
 categories:
-- Bology
-- Views
+- BologyViews
 tags: 
 - dsRNA
 - Virus

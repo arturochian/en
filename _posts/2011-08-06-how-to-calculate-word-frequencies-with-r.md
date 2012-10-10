@@ -3,8 +3,8 @@ published: true
 title: How to calculate word frequencies with R
 layout: post
 categories:
-- How to do
-- R Language
+- HowToDo
+- R-Language
 tags: 
 - R
 - word frequencies

@@ -22,5 +22,4 @@ So please pay attention to the command if you have many files which didn't want 
 Remember, using 
 {% highlight ruby%} git push origin :master{% endhighlight%}
 
-
-git push origin --delete gh-pages
+And using{% highlight ruby%}git push origin --delete gh-pages{% endhighlight%} you can delete the gh-pages branch.

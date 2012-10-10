@@ -3,8 +3,7 @@ published: true
 title: Should DRACO be effective against virtually all viruses?
 layout: post
 categories:
-- Bology
-- Views
+- BologyViews
 tags: 
 - DRACO
 - dsRNA

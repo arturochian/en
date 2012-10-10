@@ -118,7 +118,7 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
     <h2>Categories</h2>
         <ul>
              {% for cat in site.categories %}
-            <li><a href="{{ site.url }}/en/categories/#{{ cat[0] }}" title="{{ cat[0] }}" rel="{{ cat[1].size }}">{{ cat[0] }} ({{ cat[1].size }})</a></li>
+            <li><a href="{{ site.url }}/categories/#{{ cat[0] }}" title="{{ cat[0] }}" rel="{{ cat[1].size }}">{{ cat[0] }} ({{ cat[1].size }})</a></li>
              {% endfor %}
         </ul>
         </li> 
@@ -129,7 +129,7 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
         <ul>
         {% for tag in site.tags %}
        
-            <a href="{{ site.url }}/en/tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a> &nbsp;
+            <a href="{{ site.url }}/tags/#{{ tag[0] }}" title="{{ tag[0] }}" rel="{{ tag[1].size }}">{{ tag[0] }}</a> &nbsp;
             
         {% endfor %}
         </ul>

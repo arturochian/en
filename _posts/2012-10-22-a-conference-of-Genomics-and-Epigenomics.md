@@ -3,10 +3,11 @@ published: true
 title: a conference of Genomics and Epigenomics
 layout: post
 categories:
-- Bology
+- Minutes
 tags: 
 - Genomics
 - Epigenomics
+- CSH-Asia
 ---
 Last week I attend to the CSH Asia 2012 conference:High Throughput Biology- Genomics & Epigenomics.
 

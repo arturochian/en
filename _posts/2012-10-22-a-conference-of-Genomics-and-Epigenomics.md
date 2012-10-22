@@ -9,7 +9,7 @@ tags:
 - Epigenomics
 - CSH-Asia
 ---
-Last week I attend to the CSH Asia 2012 conference:High Throughput Biology- Genomics & Epigenomics.
+Last week I attend to the [CSH Asia 2012 conference:High Throughput Biology- Genomics & Epigenomics](http://www.csh-asia.org/system12.html "High Throughput Biology- Genomics & Epigenomics").
 
 This is the first time I go to a such big conference. I also apply to be a volunteer.
 

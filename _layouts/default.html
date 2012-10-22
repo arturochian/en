@@ -105,7 +105,7 @@ src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorM
 		        <li class="widget">
          <h2 >Recent Posts</h2>
               <ul>
-                {% for post in site.posts limit:10 %}
+                {% for post in site.posts limit:5 %}
                 <li>
                   <a href="/en{{ post.url }}" title="{{ post.title }}" rel="bookmark">{{ post.title }}</a>
                 </li>

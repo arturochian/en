@@ -7,6 +7,7 @@ categories:
 tags: 
 - Github
 - Git
+
 ---
 I think creating github pages are not difficult, however when I realized that gp-pages are not a single branch it may belongs to a master branch. Problems are revealing. 
 

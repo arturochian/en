@@ -6,6 +6,7 @@ categories:
 - Bioinformatics
 tags: 
 - Bioinformatics
+
 ---
 0000 – Install an Linux system on your computer.
 

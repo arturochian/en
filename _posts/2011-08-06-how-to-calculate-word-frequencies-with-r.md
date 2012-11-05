@@ -8,6 +8,7 @@ categories:
 tags: 
 - R
 - word frequencies
+
 ---
 [How to do with R] is a category about use R to deal with problems. Maybe you can use web search find this, when you have the same problems.
 

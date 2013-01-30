@@ -26,7 +26,7 @@ Group: Genes and Gene Prediction Tracks
 Track: RefSeq Genes     
 Table: refGene  
 
-3>. If you have a list of RefSeq IDs that you want annotated, on the "identifiers" line, click the "paste list" or "upload list" button to use your list of identifiers. If you want the annotation for all genes in a specific region, on the "region" line, you can click "genome" for the entire genome, "position" to define a single specific region or "define regions" to define multiple regions.    
+>3. If you have a list of RefSeq IDs that you want annotated, on the "identifiers" line, click the "paste list" or "upload list" button to use your list of identifiers. If you want the annotation for all genes in a specific region, on the "region" line, you can click "genome" for the entire genome, "position" to define a single specific region or "define regions" to define multiple regions.    
 
 >4. Set "output" to "all fields from selected table" to list all fields in your output or to "selected fields from primary or related tables" to select only certain fields in your output   
 

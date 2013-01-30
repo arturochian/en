@@ -4,6 +4,7 @@ title: 100 things bioinformatics students should do before graduating.
 layout: post
 categories:
 - Bioinformatics
+
 tags: 
 - Bioinformatics
 

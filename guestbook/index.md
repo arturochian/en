@@ -2,9 +2,11 @@
 layout: page
 title: Guestbook
 comments: yes
+permalink: /guestbook/
 ---
-#Who am I?
->master candidate
 
+> To follow the path, look to the master, follow the master, walk with the master, see through the master, become the master.
 
-You can leave me a message here.
+> Don’t beg for things, do it yourself or else you won’t get anything.
+
+## You can leave me a message here.

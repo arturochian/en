@@ -35,8 +35,8 @@ locales:
       Copyright_Notice: "Copyright Notice"
       Resent_Posts: "Resent Posts"
       Tags: "Tags"
-      Previous: "Newer"
-      Next: "Older"
+      Previous: "Older"
+      Next: "Newer"
       PostedInCategories: "Posted in"
       Taggedwith: "and tagged"
       PostDate: "on "
@@ -49,7 +49,7 @@ locales:
       Resent_Posts: "近期文章"
       Tags: "标签" 
       Previous: "前一页"
-      Next: "下一页"
+      Next: "后一页"
       PostedInCategories: "目录:"   
       Taggedwith: "| 标签:"
       PostDate: "| 发表时间: "
@@ -57,13 +57,9 @@ locales:
 ### your Blogroll info, only name can shown on the page.
 
 Blogroll:
-   - name: Jim Liu's Blog
-     href: http://jimliu.net/
-     title: 百度无线码民，伪90后技术男
-   - name: Public Library of Bioinformatics
-     href: http://www.plob.org/
-     title: 牛人师兄ybzhao的Bioinformatics图书馆
-
+    - name: Yihui Xie's Blog       
+      href: http://yihui.name      
+      title: author of knitr, I think he is the Small Forward of R world now.
 
 ### Build settings
 markdown: kramdown

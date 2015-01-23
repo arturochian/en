@@ -15,4 +15,6 @@ Last year, I made two Jekyll themes, one is [Freshman](http://yulijia.net/freshm
 
 If you are a fan of WordPress theme and try using Jekyll to build your own blog, may the Freshman21 be with you.
 
+Freshman21 has two version: one-colunm and two-columns.
+
 Welcome to submit new request to the [theme at github](https://github.com/yulijia/freshman21).
